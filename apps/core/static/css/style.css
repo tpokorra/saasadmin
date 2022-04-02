@@ -45,8 +45,9 @@ div.success {
     border-color: #dc3545;
   }
 
-.passwort-verstecken-icon {
-  display: none;
+.passwort-feld[type=password] ~ .passwort-button .passwort-verstecken-icon,
+.passwort-feld[type=text] ~ .passwort-button .passwort-anzeigen-icon {
+    display: none;
 }
 
 .passwort-behaelter {
@@ -64,6 +65,6 @@ div.success {
   position: absolute;
   right:0.25em;
   top: 50%;
-  transform: translate(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
